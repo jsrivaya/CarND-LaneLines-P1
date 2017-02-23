@@ -6,7 +6,10 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
+Original Image
 ![alt text][image1]
+
+Final Image
 ![alt text][image5]
 
 [//]: # (Image References)
@@ -19,7 +22,7 @@ The goals / steps of this project are the following:
 
 ---
 
-3### Reflection
+### Reflection
 
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
@@ -53,6 +56,8 @@ Decided to use a triangle as a region of interes, being the apex at the 58% of t
     right_bottom = [canny_image.shape[1], canny_image.shape[0]]
     apex = [canny_image.shape[1] * .50, canny_image.shape[0] * .58]
     ```
+
+![alt text][image4]
 
 - Find lanes using Hough Transform
 Here are the values used to find lines of interest
